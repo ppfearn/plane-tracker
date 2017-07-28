@@ -1,0 +1,24 @@
+{
+  "name": "item-storage",
+  "version": "1.0.0",
+  "description": "Plane Tracker",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Fearn",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "^1.17.2",
+    "connect-multiparty": "^2.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "geolib": "^2.0.22",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "requestify": "^0.2.5",
+    "wait.for": "^0.6.6",
+    "waitfor": "^0.1.3"
+  }
+}
