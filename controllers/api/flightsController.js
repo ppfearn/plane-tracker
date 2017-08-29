@@ -52,7 +52,9 @@ module.exports.controller = function(app) {
 
     // get the correct aircraft using request(ify)
     var requestify = require('requestify');
-    // --- begin 1090 data request
+    // --- begin 1090 data request, note this is pointing at stubbed data, when you
+    // have dump1090 running you should point it at that. If you're running it on
+    // the same system it will be "http://localhost:8080/data.json"
     requestify.get('http://localhost:3005/api/data').then(function(response, err) {
 
       if (err) {

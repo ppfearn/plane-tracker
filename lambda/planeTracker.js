@@ -96,7 +96,7 @@ function onSessionEnded(sessionEndedRequest, session) {
 function handleGetFlights(intent, session, callback) {
     var https = require('https');
 
-    https.get('https://paulfearn.duckdns.org/planes/api/flights', function(resp){
+    https.get('https://domain.name/planes/api/flights', function(resp){
         console.log("resp.statusCode: " +resp.statusCode);
         if (resp.statusCode != '200') {
             callback(session.attributes,
